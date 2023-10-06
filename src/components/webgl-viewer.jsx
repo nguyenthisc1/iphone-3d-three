@@ -31,7 +31,8 @@ const WebglViewer = forwardRef((props, ref) => {
 
     const [previewMode, setPreivewMode] = useState(false)
 
-    const [isMobile, setIsMobile] = useState(true)
+    const isMobileOrTablet = mobileAndTabletCheck()
+    const [isMobile, setIsMobile] = useState(isMobileOrTablet || false)
 
     useImperativeHandle(ref, () => ({
         triggerPreview() {
@@ -72,8 +73,7 @@ const WebglViewer = forwardRef((props, ref) => {
         })
 
         setViewerRef(viewer)
-        const isMobileOrTablet = mobileAndTabletCheck()
-        setIsMobile(isMobileOrTablet)
+
 
         // Add some plugins
         const manager = await viewer.addPlugin(AssetManagerPlugin)
@@ -112,7 +112,8 @@ const WebglViewer = forwardRef((props, ref) => {
 
         viewer.scene.activeCamera.setCameraOptions({ controlsEnabled: false })
 
-        if (isMobileOrTablet) {
+
+        if (isMobile) {
             position.set(-16.7, 1.17, 11.7)
             target.set(0, 1.37, 0)
             props.contentRef.current.className = 'mobile-or-tablet'

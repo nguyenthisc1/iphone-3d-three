@@ -41,11 +41,11 @@ export default function Nav() {
                     </li>
 
                     <li>
-                        <img src='./assets/images/search.svg' alt='search' />
+                        <img src='search.svg' alt='search' />
                     </li>
 
                     <li>
-                        <img src='./assets/images/store.svg' alt='store' />
+                        <img src='store.svg' alt='store' />
                     </li>
                 </ul>
             </div>

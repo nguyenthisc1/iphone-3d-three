@@ -1,5 +1,26 @@
 @import url("https://fonts.cdnfonts.com/css/sf-pro-display");
 
+html.lenis {
+  height: auto;
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
 body {
   margin: 0;
   font-family: "SF Pro Display", SF Pro Icons, Helvetica Neue, Helvetica, Arial,

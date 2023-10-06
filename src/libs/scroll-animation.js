@@ -18,7 +18,7 @@ export const scrollAnimation = (position, target, isMobile, onUpdate) => {
         onUpdate
     })
         .to(target, {
-            x: !isMobile ? 2.52 : 0.7,
+            x: !isMobile ? 3.52 : 0.7,
             y: !isMobile ? 0.77 : 1.9,
             z: !isMobile ? -1.08 : 0.7,
             scrollTrigger: {

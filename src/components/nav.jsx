@@ -6,7 +6,7 @@ export default function Nav() {
             <div className='nav-content'>
                 <ul className='list-styled'>
                     <li>
-                        <img src='./assets/images/logo.svg' alt='logo' />
+                        <img src='logo.svg' alt='logo' />
                     </li>
                     <li>
                         <a className='link-styled'>Store</a>

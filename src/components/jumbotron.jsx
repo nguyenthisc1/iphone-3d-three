@@ -14,7 +14,7 @@ export default function Jumbotron() {
     return (
         <div className='jumbotron-section wrapper'>
             <h2 className='title'>New</h2>
-            <img className='logo' src='./public/assets/images/iphone-14.jpg' alt='iphone' />
+            <img className='logo' src='iphone-14.jpg' alt='iphone' />
             <p className='text'>Big and Bigest</p>
             <span className='desciption'>
                 From $41.62/mo. for 24 mo. or $999 before trade-in
@@ -28,7 +28,7 @@ export default function Jumbotron() {
                     <a className='link' onClick={handleLernMore}>Lern more</a>
                 </li>
             </ul>
-            <img className='iphone-img' src='../../public/assets/images/iphone-hand.png' alt='iphone' />
+            <img className='iphone-img' src='iphone-hand.png' alt='iphone' />
         </div>
     )
 }
